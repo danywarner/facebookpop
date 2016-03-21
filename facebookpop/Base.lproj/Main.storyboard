@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="facebookpop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,68 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="15966-NQV4BG" translatesAutoresizingMaskIntoConstraints="NO" id="nww-h5-1ok">
+                                <rect key="frame" x="209" y="28" width="182" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="1oK-GK-XBb"/>
+                                    <constraint firstAttribute="height" constant="188" id="M8H-0z-FXd"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pkQ-la-jfw">
+                                <rect key="frame" x="174" y="251" width="253" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="aow-nv-Wz0"/>
+                                    <constraint firstAttribute="height" constant="35" id="zGf-8Z-0Sx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DBl-7q-ZDn">
+                                <rect key="frame" x="174" y="321" width="253" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="0kJ-WN-D2P"/>
+                                    <constraint firstAttribute="height" constant="35" id="kOR-Pn-QvR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="253" id="tPw-vJ-mjC"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="wsx-9E-9rT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tPw-vJ-mjC"/>
+                                        <exclude reference="wsx-9E-9rT"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TII-Hx-q73">
+                                <rect key="frame" x="227" y="391" width="147" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JpU-Ry-G4j"/>
+                                    <constraint firstAttribute="width" constant="147" id="THu-2L-pVo"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TII-Hx-q73" firstAttribute="top" secondItem="DBl-7q-ZDn" secondAttribute="bottom" constant="35" id="6V2-tn-UU5"/>
+                            <constraint firstItem="TII-Hx-q73" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7lL-HF-VNo"/>
+                            <constraint firstItem="pkQ-la-jfw" firstAttribute="top" secondItem="nww-h5-1ok" secondAttribute="bottom" constant="35" id="SdV-T7-s1C"/>
+                            <constraint firstItem="nww-h5-1ok" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kls-Ox-jAs"/>
+                            <constraint firstItem="DBl-7q-ZDn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pUD-Qq-mmW"/>
+                            <constraint firstItem="DBl-7q-ZDn" firstAttribute="top" secondItem="pkQ-la-jfw" secondAttribute="bottom" constant="35" id="pdf-vb-JWb"/>
+                            <constraint firstItem="pkQ-la-jfw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rwm-5D-9ag"/>
+                            <constraint firstItem="nww-h5-1ok" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="t7s-Hn-lTO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="325"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="15966-NQV4BG" width="1667" height="1667"/>
+    </resources>
 </document>
