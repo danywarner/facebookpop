@@ -12,6 +12,8 @@
 		65210E1D1CA084BC00D5DB07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65210E1B1CA084BC00D5DB07 /* Main.storyboard */; };
 		65210E1F1CA084BC00D5DB07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65210E1E1CA084BC00D5DB07 /* Assets.xcassets */; };
 		65210E221CA084BC00D5DB07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65210E201CA084BC00D5DB07 /* LaunchScreen.storyboard */; };
+		659D27061CA8569700527B9C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D27051CA8569700527B9C /* CustomTextField.swift */; };
+		659D27081CA8597A00527B9C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D27071CA8597A00527B9C /* CustomButton.swift */; };
 		C6A05F1E904EAA3128D65931 /* Pods_facebookpop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916EBD4B6C9C371EB5FA4767 /* Pods_facebookpop.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		65210E211CA084BC00D5DB07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65210E231CA084BC00D5DB07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65210E291CA0864B00D5DB07 /* facebookpop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "facebookpop-Bridging-Header.h"; sourceTree = "<group>"; };
+		659D27051CA8569700527B9C /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		659D27071CA8597A00527B9C /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		916EBD4B6C9C371EB5FA4767 /* Pods_facebookpop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_facebookpop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DB1E6E45F48C419C63257D /* Pods-facebookpop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-facebookpop.release.xcconfig"; path = "Pods/Target Support Files/Pods-facebookpop/Pods-facebookpop.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,8 +66,9 @@
 		65210E161CA084BC00D5DB07 /* facebookpop */ = {
 			isa = PBXGroup;
 			children = (
+				659D27041CA8567200527B9C /* Controller */,
+				659D27031CA8566C00527B9C /* View */,
 				65210E171CA084BC00D5DB07 /* AppDelegate.swift */,
-				65210E191CA084BC00D5DB07 /* LoginVC.swift */,
 				65210E1B1CA084BC00D5DB07 /* Main.storyboard */,
 				65210E1E1CA084BC00D5DB07 /* Assets.xcassets */,
 				65210E201CA084BC00D5DB07 /* LaunchScreen.storyboard */,
@@ -71,6 +76,23 @@
 				65210E291CA0864B00D5DB07 /* facebookpop-Bridging-Header.h */,
 			);
 			path = facebookpop;
+			sourceTree = "<group>";
+		};
+		659D27031CA8566C00527B9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				659D27051CA8569700527B9C /* CustomTextField.swift */,
+				659D27071CA8597A00527B9C /* CustomButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		659D27041CA8567200527B9C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65210E191CA084BC00D5DB07 /* LoginVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		BDA3EBD608C5EA6A3FCCD589 /* Frameworks */ = {
@@ -212,8 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659D27081CA8597A00527B9C /* CustomButton.swift in Sources */,
 				65210E1A1CA084BC00D5DB07 /* LoginVC.swift in Sources */,
 				65210E181CA084BC00D5DB07 /* AppDelegate.swift in Sources */,
+				659D27061CA8569700527B9C /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
